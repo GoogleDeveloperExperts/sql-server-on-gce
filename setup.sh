@@ -27,3 +27,7 @@ gcloud compute firewall-rules create sql-server-1433 \
 ##  (Optional) Add a second persistent disk
 ##      -- re-run setup and add installation path
 ## NOTE: You can re-size your disks if needed, even when instance is running
+
+## To add R Language (in-database) service
+## Connect to your instance using RDP
+## Click on c:\setup.exe --> add R
