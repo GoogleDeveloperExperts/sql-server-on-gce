@@ -17,8 +17,8 @@ gcloud compute firewall-rules create sql-server-1433 \
 --allow tcp:1433 --network [NETWORK]
 
 # --------------Other Info-------------------------------------------------
-## set the intial password for your SQL Server instances
-## connect via RDP, if using Chrome, there's a plug you can download
+## set the intial password for your SQL Server instance
+## connect via RDP, if using Chrome, there's an RDP plug-in you can download
 ## add firewall rule for RDP port (3398)
 
 ## RDP to your instances
