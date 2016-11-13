@@ -17,17 +17,17 @@ gcloud compute firewall-rules create sql-server-1433 \
 --allow tcp:1433 --network [NETWORK]
 
 # --------------Other Info-------------------------------------------------
-## set the intial password for your SQL Server instance
-## connect via RDP, if using Chrome, there's an RDP plug-in you can download
-## add firewall rule for RDP port (3398)
+## Set the intial password for your SQL Server instance
+##      -- Connect via RDP, if using Chrome, there's a RDP plug-in you can download
+##      -- Add firewall rule for RDP port (3398)
 
-## RDP to your instances
+## Connect via RDP to your instances
 ## (Optional) Install additional SQL Server components
-##      -- setup exe at c:\setup.exe
+##      -- Setup exe at c:\setup.exe
 ##  (Optional) Add a second persistent disk
-##      -- re-run setup and add installation path
+##      -- Re-run setup and add installation path
 ## NOTE: You can re-size your disks if needed, even when instance is running
 
-## To add R Language (in-database) service
-## Connect to your instance using RDP
-## Click on c:\setup.exe --> add R
+## Add R Language (in-database) service
+##      -- Connect to your instance using RDP
+##      -- Click on c:\setup.exe --> add R
