@@ -1,6 +1,10 @@
 --version version
 select @@version
 
+-- install R-services
+-- navigate to c:\sql_server_install
+-- setup.up --> install R-services
+
 --turn on
 Exec sp_configure  'external scripts enabled', 1  
 
