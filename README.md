@@ -5,4 +5,4 @@
 Includes 
 
 1. gcloud script to create an instance of SQL Server 2016 on GCE
-2. sql script to install R-language feature on SQL Server
+2. sql script to install R-language in databse feature on SQL Server
