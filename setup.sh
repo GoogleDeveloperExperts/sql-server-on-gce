@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# ---------------Get list of images--------------------------------------
+# ---------------0. Get list of images--------------------------------------
 gcloud compute images list --project windows-sql-cloud --no-standard-images
 
-# ---------------Launch your SQL Server instance on GCE-------------------
+# ---------------1. Launch your SQL Server instance on GCE------------------
 gcloud compute instances create [INSTANCE_NAME] \
     --image-project windows-sql-cloud \
     --image-family [IMAGE_FAMILY] \
@@ -11,12 +11,12 @@ gcloud compute instances create [INSTANCE_NAME] \
     --boot-disk-size [BOOT_DISK_SIZE] \
     --boot-disk-type [BOOT_DISK_TYPE]
 
-# ---------------Set the firewall rule-------------------------------------
+# ---------------2. Set the firewall rule------------------------------------
 gcloud compute firewall-rules create sql-server-1433 \
 --description "Allow SQL Server access from all sources on port 1433." \
 --allow tcp:1433 --network [NETWORK]
 
-# --------------Other Info-------------------------------------------------
+# --------------3. Other Info-------------------------------------------------
 ## Set the intial password for your SQL Server instance
 ##      -- Connect via RDP, if using Chrome, there's a RDP plug-in you can download
 ##      -- Add firewall rule for RDP port (3398)
