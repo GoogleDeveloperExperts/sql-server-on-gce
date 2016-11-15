@@ -20,8 +20,8 @@ Exec sp_configure  'external scripts enabled'
 --run a test R script
 exec sp_execute_external_script  @language =N'R',  
 @script=N'OutputDataSet<-InputDataSet',    
-@input_data_1 =N'select 1 as hello'  
-with result sets (([hello] int not null));  
+@input_data_1 =N'select 1 as helloGoogle'  
+with result sets (([helloGoogle] int not null));  
 go 
 
 -----------------3. Learn More-------------------

@@ -16,7 +16,7 @@ gcloud compute firewall-rules create sql-server-1433 \
 --description "Allow SQL Server access from all sources on port 1433." \
 --allow tcp:1433 --network [NETWORK]
 
-# --------------3. Other Info-------------------------------------------------
+# ---------------3. Other Info-------------------------------------------------
 ## Set the intial password for your SQL Server instance
 ##      -- Connect via RDP, if using Chrome, there's a RDP plug-in you can download
 ##      -- Add firewall rule for RDP port (3398)
